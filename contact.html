@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I miei contatti</title>
+</head>
+<body>
+    <h1>I miei contatti</h1>
+    <ol>
+        <li>Email: alessiopellegrinoc@gmail.com</li>
+        <li>Numero di telefono: 3297324456</li>
+    </ol>
+    <hr>
+    <form  action="mailto:info@alessiopellegrinoc@gmail.com" method="post" enctype="text/plain">
+        <!--Fino a quando non cambieremo il l'attributo action nel tag form, il nostro sito risulterà morente. In questo caso, abbiamo fatto in modo
+        che quando inseriremo nome, email, e il messaggio; cliccando invia, verrà aperta la casella di posta-->
+        <!--Il tag in questione, permette di creare un modulo-->
+        <label>Il tuo nome:</label>  <!--Il tag label(etichetta) -->
+        <input type="text" name="iltuonome" value=""><br>
+        <!--Il tag input consente all'utente di inserire il contenuto. In questo caso, il type = "text", poichè
+        dentro quella sezione, dobbiamo inserire un testo.-->
+        <!--Con questo tag, posso cambiare il colore del sito-->
+        <!--<label>Ti vuoi iscrivere al sito?</label>
+        <input type="checkbox" name="" id=""><!-->
+        <label>La tua Email:</label>
+        <input type="email" name="latuaemail" id=""><br>
+        <label>Il tuo messaggio:</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit" name="iltuomessaggio"> <br><!--Il tag è molto simile a quello precedente, cambia soltanto il type ="submit"(invia). Inoltre abbiamo cancellato
+        l'attributo value ="".-->
+        <label>Scegli il file da aggiungere</label>
+        <input type="file" name="" id=""><br>
+        <label>Inserisci la data:</label>
+        <input type="date" name="" id=""><br>
+        <label>Inserisci un range:</label>
+        <input type="range" name="" id=""><br>
+        <label>Cosa vuoi cercare?</label>
+        <input type="search" name="" id=""><br>
+        <label>Che ore sono?</label>
+        <input type="time" name="" id="">
+        <!--Posso anche omettere gli altri attributi; l'importante è che rimanga l'attributo type=""-->
+        
+
+        
+    </form>
+    
+</body>
+</html>
